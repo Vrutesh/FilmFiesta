@@ -4,7 +4,9 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    margin: 0.19rem;
+    /* margin: 0.19rem; */
+    margin-right: 25px;
+    margin-bottom: 20px;
     cursor:pointer;
     min-width:200px;
     height:300px;
@@ -29,7 +31,7 @@
     height: 290px;
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 100%;
     justify-content: flex-end;
     background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
     opacity: 0;

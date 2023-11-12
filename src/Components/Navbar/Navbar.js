@@ -12,9 +12,9 @@ function Navbar(){
                 </div>
                 <div className="nav-menu">
                     <ul>
-                    <Link to="/movies/popular"><li>Popular</li></Link>
-                    <Link to="/movies/top_rated"><li>Top Rated</li></Link>
-                    <Link to="/movies/upcoming"><li>Upcoming</li></Link>          
+                    <Link to="/movies/popular"><li>POPULAR</li></Link>
+                    <Link to="/movies/top_rated"><li>TOP RATED</li></Link>
+                    <Link to="/movies/upcoming"><li>UPCOMING</li></Link>          
                     </ul>
                 </div>
                 <div className="nav-search">

@@ -6,4 +6,5 @@
 
 html, body, #root, .app{
     min-height: 100%;
+    background-color: black;
 }
