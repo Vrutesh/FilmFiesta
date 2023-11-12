@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alkatra&family=Chakra+Petch:wght@700&family=Cinzel:wght@600&family=DynaPuff:wght@500&family=EB+Garamond:wght@500&family=Fira+Sans:ital,wght@0,200;0,300;1,200&family=Genos:wght@800&family=Hind+Siliguri&family=Jost:wght@200&family=Lumanosimo&family=Noto+Serif:wght@700&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,600&family=Open+Sans:wght@300;400;600&family=Philosopher:wght@700&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&family=Shantell+Sans:ital,wght@1,300&family=Stick+No+Bills:wght@700&family=Tektur:wght@600&family=Ubuntu:wght@700&family=Victor+Mono&display=swap');
 *{
     text-decoration: none;
     list-style: none;
@@ -11,6 +12,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background: black;
+    
 }
 
 .nav-logo{
@@ -20,6 +22,13 @@ nav{
 
 .nav-logo h1{
     color: white;
+    font-family: Cinzel;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.nav-logo h1 span{
+    color: #fb643e;
 }
 
 .nav-menu{
@@ -34,6 +43,27 @@ nav{
 
 .nav-menu ul li{
     color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+.nav-menu ul li:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #fb643e;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.nav-menu ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-menu ul li:hover {
+    color: orange;
 }
 
 .nav-search{
@@ -77,3 +107,5 @@ nav{
     background: #58629b;
     cursor: pointer;
 }
+
+

@@ -8,11 +8,12 @@ function Navbar(){
         <header>
             <nav>
                 <div className="nav-logo">
-                    <Link to="/"><h1>FilmFiesta</h1></Link>
+                    <Link to="/"><h1>Film<span>Fiesta</span></h1></Link>
                 </div>
                 <div className="nav-menu">
                     <ul>
                     <Link to="/movies/popular"><li>POPULAR</li></Link>
+                    <Link to="/movies/upcoming"><li>NOW PLAYING</li></Link> 
                     <Link to="/movies/top_rated"><li>TOP RATED</li></Link>
                     <Link to="/movies/upcoming"><li>UPCOMING</li></Link>          
                     </ul>
@@ -23,6 +24,8 @@ function Navbar(){
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
                 </div>
+        
+                
             </nav>
         </header>
         </>

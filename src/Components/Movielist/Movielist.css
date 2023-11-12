@@ -2,6 +2,10 @@
     padding: 0 3rem 3rem 3rem;
 }
 
+.movie__list h2{
+    color: #fb643e;
+}
+
 .list__title {
 font-size: 1.75rem;
 margin:  2.5rem;
