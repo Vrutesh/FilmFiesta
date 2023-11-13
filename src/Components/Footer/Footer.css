@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alkatra&family=Chakra+Petch:wght@700&family=Cinzel:wght@600&family=DynaPuff:wght@500&family=EB+Garamond:wght@500&family=Fira+Sans:ital,wght@0,200;0,300;1,200&family=Genos:wght@800&family=Hind+Siliguri&family=Jost:wght@200&family=Lumanosimo&family=Noto+Serif:wght@700&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,600&family=Open+Sans:wght@300;400;600&family=Philosopher:wght@700&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&family=Shantell+Sans:ital,wght@1,300&family=Stick+No+Bills:wght@700&family=Tektur:wght@600&family=Ubuntu:wght@700&family=Victor+Mono&display=swap');
+
+
+footer{
+    height: 260px;
+    background: #000000; 
+    border-top: 8px solid #fb643e;   
+    font-family: 'Chakra Petch', sans-serif;
+}
+section{
+    height: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #141414;
+    
+}
+footer hr{
+    margin: 0 50px;
+}
+
+.footer-logo{
+    flex-basis:300px;
+    text-align: center;
+}
+
+.footer-logo h1{
+    color: white;
+    font-family: Cinzel;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.footer-logo h4{
+    color:#bdbaba;
+}
+
+.footer-logo h1 span{
+    color: #fb643e;
+}
+
+.footer-menu{
+    flex-basis: 550px;
+    display: flex;
+    justify-content: end;
+    
+}
+.footer-menu ul{
+    display: flex;
+    gap: 45px;
+}
+
+.footer-menu ul li{
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+.footer-menu ul li:hover {
+    color: #fb643e;
+}
+
+.footer-social{
+    flex-basis: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social span{
+    width: 50px;
+    height: 50px;
+    border: 3px solid aliceblue;
+    border-radius: 50%;
+    background-color: rgb(203, 197, 197);
+    transition: .2s;
+}
+
+.footer-social span:hover{
+    border: 3px solid #fb643e;
+    transform: scale(1.2 );
+    
+}
+
+.footer-social span:active{
+    transform: scale(1);
+}
+
+.footer-social i{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.footer-design h5{
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
