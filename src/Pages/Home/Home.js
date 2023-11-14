@@ -10,7 +10,7 @@ function Home(){
     const [popularMovies, setPopularMovies]= useState([])
 
     useEffect(() =>{
-        fetch("https://api.themoviedb.org/3/movie/popular?api_key=4e44d9029b1270a757cddc766a1bcb63&language=en-US")
+        fetch(" https://api.themoviedb.org/3/movie/popular?api_key=f3fbd38c0c00cefd4bd7ffeb48aa7a17&language=en-US")
         .then(res => res.json())
         .then(data => setPopularMovies(data.results))
     }, [])
@@ -26,9 +26,10 @@ function Home(){
             >
                 {
                     popularMovies.map(movie => (
-                        <Link tp={`/movie/${movie.id}`}>
+                        <Link to={`/movie/${movie.id}`}>
                         <div className="posterImage">
                             <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
+                           
                         </div>
                         <div className="posterImage_overlay">
                             <div className="posterImage_title">{movie ? movie.original_title: ""}</div>

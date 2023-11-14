@@ -19,7 +19,7 @@ const Card = ({movie}) => {
             ?
             <div className="cards">
                 <SkeletonTheme color="#202020" highlightColor="#444">
-                <Skeleton height={300} duration={4}/>
+                <Skeleton height={400} duration={2}/>
                 </SkeletonTheme>
             </div>
             :
@@ -32,7 +32,7 @@ const Card = ({movie}) => {
                         {movie?movie.release_date:""}
                         <span className="card__rating">{movie?movie.vote_average:""}<i className="fas fa-star" /></span>
                     </div>
-                    <div className="card__description">{movie ? movie.overview.slice(0,118)+"..." : ""}</div>
+                    <div className="card__description">{movie ? movie.overview: ""}</div>
                 </div>
                 </div> 
             </Link>

@@ -16,7 +16,7 @@ function Footer(){
             <div className="footer-menu">
                     <ul>
                     <Link to="/movies/popular"><li>Popular</li></Link>
-                    <Link to="/movies/upcoming"><li>Now playing</li></Link> 
+                    <Link to="/movies/now_playing"><li>Now playing</li></Link> 
                     <Link to="/movies/top_rated"><li>Top rated</li></Link>
                     <Link to="/movies/upcoming"><li>Upcoming</li></Link>          
                     </ul>

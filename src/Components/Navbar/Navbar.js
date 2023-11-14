@@ -13,19 +13,18 @@ function Navbar(){
                 <div className="nav-menu">
                     <ul>
                     <Link to="/movies/popular"><li>POPULAR</li></Link>
-                    <Link to="/movies/upcoming"><li>NOW PLAYING</li></Link> 
+                    <Link to="/movies/now_playing"><li>NOW PLAYING</li></Link> 
                     <Link to="/movies/top_rated"><li>TOP RATED</li></Link>
-                    <Link to="/movies/upcoming"><li>UPCOMING</li></Link>          
+                    <Link to="/movies/upcoming"><li>UPCOMING</li></Link>  
+                       
                     </ul>
                 </div>
                 <div className="nav-search">
                 <div className="searchbar">
-                    <input type="search" placeholder="Search Movie" />
+                    <Link to="/movie/search/movie"><input type="search" placeholder="Search Movie" /></Link>
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
                 </div>
-        
-                
             </nav>
         </header>
         </>
