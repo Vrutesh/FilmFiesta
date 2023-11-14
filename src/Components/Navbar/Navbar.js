@@ -1,35 +1,54 @@
 import React from "react";
-import "./Navbar.css"
+import "./Navbar.css";
 import { Link } from "react-router-dom";
 
-function Navbar(){
-    return(
-        <>
-        <header>
-            <nav>
-                <div className="nav-logo">
-                    <Link to="/"><h1>Film<span>Fiesta</span></h1></Link>
-                </div>
-                <div className="nav-menu">
-                    <ul>
-                    <Link to="/movies/popular"><li>POPULAR</li></Link>
-                    <Link to="/movies/now_playing"><li>NOW PLAYING</li></Link> 
-                    <Link to="/movies/top_rated"><li>TOP RATED</li></Link>
-                    <Link to="/movies/upcoming"><li>UPCOMING</li></Link>  
-                       
-                    </ul>
-                </div>
-                <div className="nav-search">
-                <div className="searchbar">
-                    <Link to="/movie/search/movie"><input type="search" placeholder="Search Movie" /></Link>
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-                </div>
-            </nav>
-        </header>
-        </>
-    )
+function Navbar() {
+  return (
+    <>
+      <header>
+        <nav>
+          <div className="nav-logo">
+            <Link to="/">
+              <h1>Film<span>Fiesta</span></h1>
+            </Link>
+          </div>
+          <div className="nav-menu">
+            <ul>
+              <li>
+                <Link to="/">MOVIES</Link>
+                <ul className="dropdown-menu">
+                  <li><Link to="/movies/popular">POPULAR</Link></li>
+                  <li><Link to="/movies/now_playing">NOW PLAYING</Link></li>
+                  <li><Link to="/movies/top_rated">TOP RATED</Link></li>
+                  <li><Link to="/movies/upcoming">UPCOMING</Link></li>
+                </ul>
+              </li>
+              <li>
+                <Link to="/">TV SERIES</Link>
+                <ul className="dropdown-menu">
+                  <li><Link to="/tv/popular">TV POPULAR</Link></li>
+                  <li><Link to="/tv/airing_today">AIRING TODAY</Link></li>
+                  <li><Link to="/tv/on_the_air">ON THE AIR</Link></li>
+                  <li><Link to="/tv/top_rated">TOP RATED</Link></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div className="nav-search">
+            <div className="searchbar">
+                <input type="search" placeholder="Search Movie" />
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </div>
+
+          <div className="nav-userprofile">
+            <span></span>
+          </div>
+
+        </nav>
+      </header>
+    </>
+  );
 }
 
-export default Navbar
- 
+export default Navbar;

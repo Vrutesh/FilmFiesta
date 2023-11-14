@@ -2,6 +2,7 @@
 *{
     text-decoration: none;
     list-style: none;
+    color: white;
 }
 header{
     height: 100%;
@@ -32,38 +33,73 @@ nav{
     color: #fb643e;
 }
 
-.nav-menu{
-    flex-basis: 600px;
+ .nav-menu{
+    flex-basis: 300px;
     display: flex;
-    justify-content: start;
-}
-.nav-menu ul{
-    display: flex;
-    gap: 45px;
+    justify-content: start; 
+     
 }
 
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
 .nav-menu ul li{
-    color: white;
     font-family: 'Chakra Petch', sans-serif;
+    display: inline-block;
+    margin-right: 70px;
+    position: relative;
     
 }
 
-.nav-menu ul li:after {
+
+.nav-menu li:hover .dropdown-menu {
+    display: block;
+    width: 120px;
+  }
+  
+  .dropdown-menu {
+    color: white;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0 ;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .dropdown-menu li {
+    width: 120px;
+    margin: 0;
+    padding: 25px 0 10px 0;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+  }
+
+
+.dropdown-menu li:after {
     content: "";
     display: block;
     height: 4px;
-    width: 100%;
+    width: 70px;
     background-color: #fb643e;
     transform: scale(0);
     transform-origin: left;
     transition: transform 0.5s ease;
 }
 
-.nav-menu ul li:hover::after {
+.dropdown-menu li:hover::after {
     transform: scaleX(1);
 }
 
-.nav-menu ul li:hover {
+.dropdown-menu li:hover {
     color: orange;
 }
 
@@ -109,6 +145,20 @@ nav{
     cursor: pointer;
 }
 
+.nav-userprofile{
+    flex-basis: 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
 
-
-
+.nav-userprofile span{
+    width: 60px;
+    height: 60px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: rgb(203, 197, 197);
+    background-image: url('/public/pic.jpg');
+    background-size: cover;
+    transition: .2s;
+}

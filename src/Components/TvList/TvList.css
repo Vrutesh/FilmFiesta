@@ -1,0 +1,20 @@
+.tv__list {
+    padding: 0 3rem 3rem 3rem;
+}
+
+.tv__list h2{
+    color: #fb643e;
+    font-size: 1.75rem;
+    margin:  2.5rem 0 2.5rem 6.5rem;
+}
+
+.tv__title {
+font-size: 1.75rem;
+margin:  2.5rem 0 2.5rem 6.5rem;
+}
+
+.list__TvCards {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+}
