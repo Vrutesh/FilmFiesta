@@ -4,6 +4,7 @@
     list-style: none;
     color: white;
 }
+
 header{
     height: 100%;
 }
@@ -12,9 +13,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
-    
-    
+    background: black;   
 }
 
 .nav-logo{
@@ -34,10 +33,17 @@ nav{
 }
 
  .nav-menu{
-    flex-basis: 300px;
+    flex-basis: 400px;
     display: flex;
     justify-content: start; 
+    align-items: center;
+    gap: 70px;
+    font-family: 'Chakra Petch', sans-serif;
      
+}
+
+.nav-menu h4 a{
+    color: #fb643e;
 }
 
 .nav-menu ul {
@@ -51,8 +57,7 @@ nav{
     font-family: 'Chakra Petch', sans-serif;
     display: inline-block;
     margin-right: 70px;
-    position: relative;
-    
+    position: relative;   
 }
 
 
@@ -60,6 +65,10 @@ nav{
     display: block;
     width: 120px;
   }
+.nav-menu li a:hover{
+    color: #fb643e;
+    transition: .4s;
+}
   
   .dropdown-menu {
     color: white;
@@ -158,7 +167,7 @@ nav{
     border: 3px solid black;
     border-radius: 50%;
     background-color: rgb(203, 197, 197);
-    background-image: url('/public/pic.jpg');
+    background-image: url('/public/Avatar.jpg');
     background-size: cover;
     transition: .2s;
 }

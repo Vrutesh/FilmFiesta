@@ -12,7 +12,9 @@ function Navbar() {
               <h1>Film<span>Fiesta</span></h1>
             </Link>
           </div>
+         
           <div className="nav-menu">
+            <h4><Link to="/">HOME</Link></h4>
             <ul>
               <li>
                 <Link to="/">MOVIES</Link>

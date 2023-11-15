@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import Movielist from '../../Components/Movielist/Movielist';
+import TvList from '../../Components/TvList/TvList';
 
 
 function Home(){
@@ -29,7 +30,7 @@ function Home(){
             <Carousel 
             showThumbs={false}
             autoPlay={true}
-            transitionTime={4}
+            transitionTime={3}
             infiniteLoop={true}
             showStatus={false}
             >
@@ -63,9 +64,9 @@ function Home(){
                            
                         </div>
                         <div className="posterImage_overlay">
-                            <div className="posterImage_title">{tv ? tv.original_title: ""}</div>
+                            <div className="posterImage_title">{tv ? tv.original_name: ""}</div>
                             <div className="posterImage_runtime">
-                                {tv ? tv.release_date:""}
+                                {tv ? tv.first_air_date:""}
                                 <span className="posterImage_rating">
                                     {tv ? tv.vote_average :""}
                                     <i className="fas fa-star" />{""}
@@ -78,6 +79,7 @@ function Home(){
                 }
             </Carousel>
             <Movielist/>
+            <TvList/>
         </div>
         </>
     )

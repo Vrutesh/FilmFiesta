@@ -17,14 +17,14 @@ const TvList = () => {
     }, [type])
 
     const getData = () => {
-        fetch(`https://api.themoviedb.org/3/tv/${type ? type : "popular"}?api_key=f3fbd38c0c00cefd4bd7ffeb48aa7a17&language=en-US`)
+        fetch(`https://api.themoviedb.org/3/tv/${type ? type : "airing_today"}?api_key=f3fbd38c0c00cefd4bd7ffeb48aa7a17&language=en-US`)
         .then(res => res.json())
         .then(data => setTvList(data.results))
     }
 
     return (
         <div className="tv__list">
-            <h2 className="tv__title">{(type ? type : "POPULAR").toUpperCase()}</h2>
+            <h2 className="tv__title">{(type ? type : "AIRING_TODAY").toUpperCase()}</h2>
             <div className="list__TvCards">
                 {
                     TvList.map(tv => (
