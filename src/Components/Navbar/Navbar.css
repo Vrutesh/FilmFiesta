@@ -33,7 +33,7 @@ nav{
 }
 
  .nav-menu{
-    flex-basis: 400px;
+    flex-basis: 800px;
     display: flex;
     justify-content: start; 
     align-items: center;
@@ -42,8 +42,13 @@ nav{
      
 }
 
-.nav-menu h4 a{
+.nav-menu .home-tab a{
     color: #fb643e;
+}
+
+.nav-menu .trending-tab a:hover{
+    color: #fb643e;
+    transition: .4s;
 }
 
 .nav-menu ul {
@@ -119,7 +124,7 @@ nav{
     padding-right: 50px;
     
 } 
-
+/* 
 .searchbar{
    width: 100%;
    height: 50px;
@@ -152,7 +157,7 @@ nav{
     height: 40px;
     background: #58629b;
     cursor: pointer;
-}
+} */
 
 .nav-userprofile{
     flex-basis: 100px;
@@ -171,3 +176,5 @@ nav{
     background-size: cover;
     transition: .2s;
 }
+
+

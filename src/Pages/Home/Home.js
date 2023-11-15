@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import Movielist from '../../Components/Movielist/Movielist';
 import TvList from '../../Components/TvList/TvList';
+import TrendingMovieList from '../../Components/TrendingMovieList/TrendingMovieList';
 
 
 function Home(){
@@ -17,13 +18,17 @@ function Home(){
         .then(data => setPopularMovies(data.results))
     }, [])
 
-    const [popularTv, setPopularTv]= useState([])
+
+
+    const [trendingMovie, setTrendingMovie]= useState([])
 
     useEffect(() =>{
-        fetch(" https://api.themoviedb.org/3/tv/popular?api_key=f3fbd38c0c00cefd4bd7ffeb48aa7a17&language=en-US")
+        fetch(" https://api.themoviedb.org/3/trending/movie/day?api_key=f3fbd38c0c00cefd4bd7ffeb48aa7a17&language=en-US")
         .then(res => res.json())
-        .then(data => setPopularTv(data.results))
+        .then(data => setTrendingMovie(data.results))
     }, [])
+
+    
     return(
         <>
         <div className="poster">
@@ -57,29 +62,32 @@ function Home(){
                 }
 
 {
-                    popularTv.map(tv => (
-                        <Link to={`/tv/${tv.id}`}>
+    trendingMovie.map(trending => (
+                        <Link to={`/trending/movie/day${trending.id}`}>
                         <div className="posterImage">
-                            <img src={`https://image.tmdb.org/t/p/original${tv && tv.backdrop_path}`} alt='Tv-poster'/>
+                            <img src={`https://image.tmdb.org/t/p/original${trending && trending.backdrop_path}`} alt='Tv-poster'/>
                            
                         </div>
                         <div className="posterImage_overlay">
-                            <div className="posterImage_title">{tv ? tv.original_name: ""}</div>
+                            <div className="posterImage_title">{trending ? trending.original_name: ""}</div>
                             <div className="posterImage_runtime">
-                                {tv ? tv.first_air_date:""}
+                                {trending ? trending.first_air_date:""}
                                 <span className="posterImage_rating">
-                                    {tv ? tv.vote_average :""}
+                                    {trending ? trending.vote_average :""}
                                     <i className="fas fa-star" />{""}
                                 </span>
                             </div>
-                            <div className="posterImage_description">{tv ? tv.overview :""}</div>
+                            <div className="posterImage_description">{trending ? trending.overview :""}</div>
                         </div>
                         </Link>
                     ))
                 }
+                
+                            
             </Carousel>
             <Movielist/>
             <TvList/>
+            <TrendingMovieList/>
         </div>
         </>
     )

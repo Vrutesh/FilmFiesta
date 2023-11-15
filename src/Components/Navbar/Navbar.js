@@ -14,7 +14,8 @@ function Navbar() {
           </div>
          
           <div className="nav-menu">
-            <h4><Link to="/">HOME</Link></h4>
+            <h4 className="home-tab"><Link to="/">HOME</Link></h4>
+            <h4 className="trending-tab"><Link to="/trending/movie/day">TRENDING MOVIES</Link></h4>
             <ul>
               <li>
                 <Link to="/">MOVIES</Link>
@@ -25,6 +26,7 @@ function Navbar() {
                   <li><Link to="/movies/upcoming">UPCOMING</Link></li>
                 </ul>
               </li>
+              
               <li>
                 <Link to="/">TV SERIES</Link>
                 <ul className="dropdown-menu">
@@ -36,12 +38,12 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          <div className="nav-search">
+          {/* <div className="nav-search">
             <div className="searchbar">
                 <input type="search" placeholder="Search Movie" />
               <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
-          </div>
+          </div> */}
 
           <div className="nav-userprofile">
             <span></span>
