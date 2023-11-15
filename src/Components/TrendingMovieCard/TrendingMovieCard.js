@@ -28,9 +28,9 @@ const TrendingMovieCard = ({trending}) => {
                <div className="cards">
                <img className="cards__img" src={`https://image.tmdb.org/t/p/original${trending?trending.poster_path:""}`} alt="tv-poster" />
                 <div className="cards__overlay">
-                    <div className="card__title">{trending?trending.original_name:""}</div>
+                    <div className="card__title">{trending?trending.original_title:""}</div>
                     <div className="card__runtime">
-                        {trending?trending.first_air_date:""}
+                        {trending?trending.release_date:""}
                         <span className="card__rating">{trending?trending.vote_average:""}<i className="fas fa-star" /></span>
                     </div>
                     <div className="card__description">{trending ? trending.overview: ""}</div>
