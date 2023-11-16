@@ -1,139 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alkatra&family=Chakra+Petch:wght@700&family=Cinzel:wght@600&family=DynaPuff:wght@500&family=EB+Garamond:wght@500&family=Fira+Sans:ital,wght@0,200;0,300;1,200&family=Genos:wght@800&family=Hind+Siliguri&family=Jost:wght@200&family=Lumanosimo&family=Noto+Serif:wght@700&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,600&family=Open+Sans:wght@300;400;600&family=Philosopher:wght@700&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&family=Shantell+Sans:ital,wght@1,300&family=Stick+No+Bills:wght@700&family=Tektur:wght@600&family=Ubuntu:wght@700&family=Victor+Mono&display=swap');
-*{
-    text-decoration: none;
-    list-style: none;
-    color: white;
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alkatra&family=Chakra+Petch:wght@700&family=Cinzel:wght@600&family=DynaPuff:wght@500&family=EB+Garamond:wght@500&family=Fira+Sans:ital,wght@0,200;0,300;1,200&family=Genos:wght@800&family=Hind+Siliguri&family=Jost:wght@200&family=Lumanosimo&family=Noto+Serif:wght@700&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,600&family=Open+Sans:wght@300;400;600&family=Philosopher:wght@700&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&family=Shantell+Sans:ital,wght@1,300&family=Stick+No+Bills:wght@700&family=Tektur:wght@600&family=Ubuntu:wght@700&family=Victor+Mono&display=swap");
+* {
+  text-decoration: none;
+  list-style: none;
+  color: white;
 }
 
-header{
-    height: 100%;
-    width: 100%;
+header {
+  height: 100%;
 }
-nav{
-    width: 100%;
-    height: 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: black;   
-}
-
-.nav-logo{
-    width: 30%;
-    text-align: center;
+nav {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
 }
 
-.nav-logo h1{
-    color: white;
-    font-family: Cinzel;
-    font-weight: 600;
-    font-size: 35px;
+.nav-logo {
+  width: 30%;
+  text-align: center;
 }
 
-.nav-logo h1 span{
-    color: #fb643e;
+.nav-logo h1 {
+  color: white;
+  font-family: Cinzel;
+  font-weight: 600;
+  font-size: 35px;
 }
 
- .nav-menu{
-    width: 70%;
-    display: flex;
-    justify-content: start; 
-    align-items: center;
-    gap: 70px;
-    font-family: 'Chakra Petch', sans-serif;
-     
+.nav-logo h1 span {
+  color: #fb643e;
 }
 
-.nav-menu .home-tab a{
-    color: #fb643e;
+.nav-menu {
+  width: 70%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+  font-family: "Chakra Petch", sans-serif;
 }
 
-.nav-menu .trending-tab a:hover{
-    color: #fb643e;
-    transition: .4s;
+.nav-menu .home-tab a {
+  color: #fb643e;
+}
+
+.nav-menu .trending-tab a:hover {
+  color: #fb643e;
+  transition: 0.4s;
 }
 
 .nav-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-
-.nav-menu ul li{
-    font-family: 'Chakra Petch', sans-serif;
-    display: inline-block;
-    margin-right: 60px;
-    position: relative;   
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+.nav-menu ul li {
+  font-family: "Chakra Petch", sans-serif;
+  display: inline-block;
+  margin-right: 60px;
+  position: relative;
+}
 
 .nav-menu li:hover .dropdown-menu {
-    display: block;
-    width: 120px;
-  }
-.nav-menu li a:hover{
-    color: #fb643e;
-    transition: .4s;
+  display: block;
+  width: 120px;
 }
-  
-  .dropdown-menu {
-    color: white;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0 ;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    z-index: 1;
-  }
-  
-  .dropdown-menu li {
-    width: 120px;
-    margin: 0;
-    padding: 25px 0 10px 0;
-    color: white;
-    cursor: pointer;
-    display: block;
-    font-size: 14px;
-  }
+.nav-menu li a:hover {
+  color: #fb643e;
+  transition: 0.4s;
+}
 
+.dropdown-menu {
+  color: white;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  width: 120px;
+  margin: 0;
+  padding: 25px 0 10px 0;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+}
 
 .dropdown-menu li:after {
-    content: "";
-    display: block;
-    height: 4px;
-    width: 70px;
-    background-color: #fb643e;
-    transform: scale(0);
-    transform-origin: left;
-    transition: transform 0.5s ease;
+  content: "";
+  display: block;
+  height: 4px;
+  width: 70px;
+  background-color: #fb643e;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
 }
 
 .dropdown-menu li:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .dropdown-menu li:hover {
-    color: orange;
+  color: orange;
 }
 
-.nav-search{
-    flex-basis: 300px;
-    display: flex;
-    justify-content: end;
-    padding-right: 50px;
-    
-} 
-
-@media screen and (max-width: 450px){
-   .nav-logo{
+@media screen and (max-width: 450px) {
+  .nav-logo {
     width: 10%;
-   }
+  }
 
-   .nav-menu{
+  .nav-menu {
     width: 90%;
-   }
+  }
+}
 
+@media screen and (max-width: 400px) {
+  .nav-logo {
+    width: 5%;
+  }
+
+  .nav-menu {
+    width: 95%;
+  }
 }

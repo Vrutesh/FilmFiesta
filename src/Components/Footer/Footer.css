@@ -1,168 +1,225 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alkatra&family=Chakra+Petch:wght@700&family=Cinzel:wght@600&family=DynaPuff:wght@500&family=EB+Garamond:wght@500&family=Fira+Sans:ital,wght@0,200;0,300;1,200&family=Genos:wght@800&family=Hind+Siliguri&family=Jost:wght@200&family=Lumanosimo&family=Noto+Serif:wght@700&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,600&family=Open+Sans:wght@300;400;600&family=Philosopher:wght@700&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&family=Shantell+Sans:ital,wght@1,300&family=Stick+No+Bills:wght@700&family=Tektur:wght@600&family=Ubuntu:wght@700&family=Victor+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alkatra&family=Chakra+Petch:wght@700&family=Cinzel:wght@600&family=DynaPuff:wght@500&family=EB+Garamond:wght@500&family=Fira+Sans:ital,wght@0,200;0,300;1,200&family=Genos:wght@800&family=Hind+Siliguri&family=Jost:wght@200&family=Lumanosimo&family=Noto+Serif:wght@700&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,600&family=Open+Sans:wght@300;400;600&family=Philosopher:wght@700&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&family=Shantell+Sans:ital,wght@1,300&family=Stick+No+Bills:wght@700&family=Tektur:wght@600&family=Ubuntu:wght@700&family=Victor+Mono&display=swap");
 
-
-footer{
-    width: 100%;
-    height: 260px;
-    background: #000000; 
-    border-top: 8px solid #fb643e;   
-    font-family: 'Chakra Petch', sans-serif;
-}
-section{
-    width: 100%;
-    height: 190px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #141414;
-    
-}
-footer hr{
-    margin: 0 50px;
+footer {
+  width: 100%;
+  height: 260px;
+  background: #000000;
+  border-top: 8px solid #fb643e;
+  font-family: "Chakra Petch", sans-serif;
 }
 
-.footer-logo{
-    width: 30%;
-    text-align: center;
+section {
+  width: 100%;
+  height: 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #141414;
 }
 
-.footer-logo h1{
-    color: white;
-    font-family: Cinzel;
-    font-weight: 600;
-    font-size: 40px;
+footer hr {
+  margin: 0 50px;
 }
 
-.footer-logo h4{
-    color:#bdbaba;
+.footer-logo {
+  width: 30%;
+  text-align: center;
 }
 
-.footer-logo h1 span{
-    color: #fb643e;
+.footer-logo h1 {
+  color: white;
+  font-family: Cinzel;
+  font-weight: 600;
+  font-size: 40px;
 }
 
-.footer-menu{
-   width: 40%;
-    display: flex;
-    justify-content: center;
-    
-}
-.footer-menu ul{
-    display: flex;
-    gap: 45px;
+.footer-logo h4 {
+  color: #bdbaba;
 }
 
-.footer-menu ul li{
-    color: white;
-    font-family: 'Chakra Petch', sans-serif;
-    
+.footer-logo h1 span {
+  color: #fb643e;
+}
+
+.footer-menu {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu ul {
+  display: flex;
+  gap: 45px;
+}
+
+.footer-menu ul li {
+  color: white;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .footer-menu ul li:hover {
-    color: #fb643e;
+  color: #fb643e;
 }
 
-.footer-social{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.footer-social {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.footer-social span{
-    width: 50px;
-    height: 50px;
-    border: 3px solid aliceblue;
-    border-radius: 50%;
-    background-color: rgb(233, 228, 228);
-    transition: .2s;
+.footer-social span {
+  width: 50px;
+  height: 50px;
+  border: 3px solid aliceblue;
+  border-radius: 50%;
+  background-color: rgb(233, 228, 228);
+  transition: 0.2s;
 }
 
-.footer-social span:hover{
-    border: 3px solid #fb643e;
-    transform: scale(1.2 );
-    
+.footer-social span:hover {
+  border: 3px solid #fb643e;
+  transform: scale(1.2);
 }
 
-.footer-social span:active{
-    transform: scale(1);
+.footer-social span:active {
+  transform: scale(1);
 }
 
-.footer-social i{
-    color: #000000;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
+.footer-social i {
+  color: #000000;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
 
-
-.footer-design h5{
-    color: white;
-    text-align: center;
-    padding-top: 20px;
+.footer-design h5 {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
 }
-
 
 /* responsiveness */
 
-@media screen and (max-width: 625px){
-    footer{
-        height: 270px;
-    }
+@media screen and (max-width: 625px) {
+  footer {
+    height: 270px;
+  }
 
-    section{
-        height: 200px;
-        width: 100%;
-    }
+  section {
+    height: 200px;
+    width: 100%;
+  }
 
-  .footer-logo{
+  .footer-logo {
     width: 30%;
   }
 
-  .footer-logo h1{
+  .footer-logo h1 {
     font-size: 20px;
   }
-  .footer-logo h4{
+
+  .footer-logo h4 {
     font-size: 12px;
   }
 
-  .footer-menu{
+  .footer-menu {
     width: 30%;
     display: flex;
     flex-direction: column;
   }
 
-  .footer-menu ul{
+  .footer-menu ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
 
-  .footer-social{
+  .footer-social {
     width: 30%;
     display: flex;
     justify-content: start;
     gap: 10px;
   }
 
-  .footer-social span{
+  .footer-social span {
     width: 30px;
     height: 30px;
     border-radius: 50%;
   }
 
-  .footer-social i{
+  .footer-social i {
     height: 100%;
     font-size: 18px;
     display: flex;
     align-items: center;
   }
 
-  .footer-design{
+  .footer-design {
     font-size: 14px;
   }
 }
 
+@media screen and (max-width: 450px) {
+  .footer-logo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .footer-logo h1 {
+    font-size: 22px;
+  }
+
+  .footer-logo h4 {
+    font-size: 10px;
+  }
+
+  .footer-menu {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social {
+    width: 25%;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-logo {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-logo h1 {
+    font-size: 18px;
+  }
+  .footer-menu {
+    width: 20%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-social {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-design {
+    font-size: 12px;
+  }
+}

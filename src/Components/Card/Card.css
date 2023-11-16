@@ -1,13 +1,11 @@
-.movie-card{
-    width: 100%;
-}
+
 .cards {
     display: flex;
     transition:.4s;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     cursor:pointer;
     min-width:280px;
     height:400px;
@@ -78,13 +76,20 @@
 }
 
 
-
-
 @media screen and (max-width: 450px){
-    .movie-card{
-       width: 100%;
-    }
+  
     .cards{
+        display: flex;
+        justify-content: center;
+    }
+
+   
+}
+
+@media screen and (max-width: 400px){
+  
+    .cards{
+        width: 100%;
         display: flex;
         justify-content: center;
     }
