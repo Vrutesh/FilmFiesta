@@ -114,6 +114,8 @@ nav {
   color: orange;
 }
 
+
+
 @media screen and (max-width: 450px) {
   .nav-logo {
     width: 10%;
@@ -124,12 +126,4 @@ nav {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .nav-logo {
-    width: 5%;
-  }
 
-  .nav-menu {
-    width: 95%;
-  }
-}

@@ -22,6 +22,6 @@ margin:  2.5rem 0 2.5rem 9.5rem;
 
 @media screen and (max-width: 400px){
     .list__title{
-        margin: 2.5rem 0 2.5rem 3rem;
+        margin: 2.5rem 0 2.5rem 3.5rem;
     }
 }
