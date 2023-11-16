@@ -61,6 +61,49 @@
     font-size: 1rem;
     margin-bottom: 0.25rem;
     display: flex;
-    text-align: left;
+    text-align: justify;
     width: 50%;
+}
+
+@media screen and (max-width: 625px){
+
+    .posterImage{
+        height: 350px;
+    }
+
+    .posterImage > img{
+        height: 100%;
+        object-fit: cover;
+        
+    }
+
+    .posterImage_title{
+        font-size: 2rem;
+    }
+    
+    .posterImage_runtime{
+        font-size: .8rem;
+        margin-bottom: .5rem;
+    }   
+    
+    .posterImage_description{
+        font-size: .9rem;
+        width: 90%;
+    }
+   
+}
+
+@media screen and (max-width: 450px){
+    .posterImage{
+        height: 350px;
+       
+    }
+
+    .posterImage_overlay{
+        height: 10%;
+    }
+
+    .posterImage_title{
+        font-size: 1.5rem;
+    }
 }

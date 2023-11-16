@@ -7,8 +7,10 @@
 
 header{
     height: 100%;
+    width: 100%;
 }
 nav{
+    width: 100%;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -17,7 +19,7 @@ nav{
 }
 
 .nav-logo{
-    flex-basis:300px;
+    width: 30%;
     text-align: center;
 }
 
@@ -33,7 +35,7 @@ nav{
 }
 
  .nav-menu{
-    flex-basis: 800px;
+    width: 70%;
     display: flex;
     justify-content: start; 
     align-items: center;
@@ -61,7 +63,7 @@ nav{
 .nav-menu ul li{
     font-family: 'Chakra Petch', sans-serif;
     display: inline-block;
-    margin-right: 70px;
+    margin-right: 60px;
     position: relative;   
 }
 
@@ -159,7 +161,7 @@ nav{
     cursor: pointer;
 } */
 
-.nav-userprofile{
+/* .nav-userprofile{
     flex-basis: 100px;
     display: flex;
     justify-content: start;
@@ -175,6 +177,16 @@ nav{
     background-image: url('/public/Avatar.jpg');
     background-size: cover;
     transition: .2s;
+} */
+
+
+@media screen and (max-width: 450px){
+   .nav-logo{
+    width: 10%;
+   }
+
+   .nav-menu{
+    width: 90%;
+   }
+
 }
-
-

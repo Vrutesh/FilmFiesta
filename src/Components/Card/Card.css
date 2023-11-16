@@ -1,11 +1,13 @@
+.movie-card{
+    width: 100%;
+}
 .cards {
     display: flex;
     transition:.4s;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    margin-right: 25px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     cursor:pointer;
     min-width:280px;
     height:400px;
@@ -69,7 +71,23 @@
 }
 
 .card__description {
+    text-align: justify;
     font-style: italic;
     font-size: .75rem;
     margin-bottom: 0.25rem;
+}
+
+
+
+
+@media screen and (max-width: 450px){
+    .movie-card{
+       width: 100%;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+    }
+
+   
 }

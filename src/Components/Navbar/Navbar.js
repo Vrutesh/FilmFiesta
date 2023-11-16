@@ -45,9 +45,9 @@ function Navbar() {
             </div>
           </div> */}
 
-          <div className="nav-userprofile">
+          {/* <div className="nav-userprofile">
             <span></span>
-          </div>
+          </div> */}
 
         </nav>
       </header>

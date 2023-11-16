@@ -17,11 +17,13 @@ const Card = ({movie}) => {
         {
             isLoading
             ?
+            <div className="movie-card">
             <div className="cards">
                 <SkeletonTheme color="#202020" highlightColor="#444">
                 <Skeleton height={400} duration={2}/>
                 </SkeletonTheme>
             </div>
+        </div>
             :
 
             <Link to={`/movie/${movie.id}`} style={{textDecoration:"none", color:"white"}}>

@@ -4,8 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import Movielist from '../../Components/Movielist/Movielist';
-import TvList from '../../Components/TvList/TvList';
-import TrendingMovieList from '../../Components/TrendingMovieList/TrendingMovieList';
+
 
 
 function Home(){
@@ -55,39 +54,16 @@ function Home(){
                                     <i className="fas fa-star" />{""}
                                 </span>
                             </div>
-                            <div className="posterImage_description">{movie ? movie.overview :""}</div>
+                            <div className="posterImage_description">{movie ? movie.overview.slice(0, 118) :""}</div>
                         </div>
                         </Link>
                     ))
                 }
 
-{
-    trendingMovie.map(trending => (
-                        <Link to={`/trending/movie/day${trending.id}`}>
-                        <div className="posterImage">
-                            <img src={`https://image.tmdb.org/t/p/original${trending && trending.backdrop_path}`} alt='Tv-poster'/>
-                           
-                        </div>
-                        <div className="posterImage_overlay">
-                            <div className="posterImage_title">{trending ? trending.original_name: ""}</div>
-                            <div className="posterImage_runtime">
-                                {trending ? trending.first_air_date:""}
-                                <span className="posterImage_rating">
-                                    {trending ? trending.vote_average :""}
-                                    <i className="fas fa-star" />{""}
-                                </span>
-                            </div>
-                            <div className="posterImage_description">{trending ? trending.overview :""}</div>
-                        </div>
-                        </Link>
-                    ))
-                }
                 
                             
             </Carousel>
             <Movielist/>
-            <TvList/>
-            <TrendingMovieList/>
         </div>
         </>
     )
