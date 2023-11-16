@@ -1,12 +1,11 @@
 
-
 .movie__list h2{
     color: #fb643e;
 }
 
 .list__title {
 font-size: 1.75rem;
-margin:  2.5rem 0 2.5rem 6.5rem;
+margin:  2.5rem 0 2.5rem 9.5rem;
 }
 
 .list__cards {
@@ -16,7 +15,7 @@ margin:  2.5rem 0 2.5rem 6.5rem;
 }
 
 
-@media screen and (max-width: 450px){
+/* @media screen and (max-width: 450px){
  .movie__list{
     width: 100%;
     display: flex;
@@ -32,4 +31,4 @@ margin:  2.5rem 0 2.5rem 6.5rem;
         margin-right: 0px;
         margin-bottom: 30px;
     }
-}
+} */

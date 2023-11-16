@@ -38,17 +38,6 @@ function Navbar() {
               </li>
             </ul>
           </div>
-          {/* <div className="nav-search">
-            <div className="searchbar">
-                <input type="search" placeholder="Search Movie" />
-              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-          </div> */}
-
-          {/* <div className="nav-userprofile">
-            <span></span>
-          </div> */}
-
         </nav>
       </header>
     </>

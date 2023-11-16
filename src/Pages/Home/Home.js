@@ -58,10 +58,7 @@ function Home(){
                         </div>
                         </Link>
                     ))
-                }
-
-                
-                            
+                }                
             </Carousel>
             <Movielist/>
         </div>
