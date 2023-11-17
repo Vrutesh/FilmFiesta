@@ -19,13 +19,7 @@ function Home(){
 
 
 
-    const [trendingMovie, setTrendingMovie]= useState([])
-
-    useEffect(() =>{
-        fetch(" https://api.themoviedb.org/3/trending/movie/day?api_key=f3fbd38c0c00cefd4bd7ffeb48aa7a17&language=en-US")
-        .then(res => res.json())
-        .then(data => setTrendingMovie(data.results))
-    }, [])
+  
 
     
     return(
@@ -54,7 +48,7 @@ function Home(){
                                     <i className="fas fa-star" />{""}
                                 </span>
                             </div>
-                            <div className="posterImage_description">{movie ? movie.overview.slice(0, 118) :""}</div>
+                            <div className="posterImage_description">{movie ? movie.overview.slice(0, 102) :"..."}...</div>
                         </div>
                         </Link>
                     ))

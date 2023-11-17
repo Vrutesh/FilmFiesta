@@ -114,6 +114,23 @@ nav {
   color: orange;
 }
 
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.sidebar{
+  display: none;
+}
+
 
 
 @media screen and (max-width: 450px) {
@@ -124,6 +141,53 @@ nav {
   .nav-menu {
     width: 90%;
   }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: black;
+    z-index: 2;
+    padding-top: 90px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .nav-menu.hidden {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: black;
+    z-index: 2;
+    padding-top: 90px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-menu.hidden h4 {
+    margin: 20px 0;
+  }
+
 }
 
 
