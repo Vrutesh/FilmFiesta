@@ -114,36 +114,36 @@ nav {
   color: orange;
 }
 
-.hamburger-menu {
+.sidebar {
   display: none;
-  flex-direction: column;
+}
+.hamburger {
+  display: none;
   cursor: pointer;
 }
 
-.bar {
-  width: 25px;
+.hamburger .bar {
+  width: 30px;
   height: 3px;
   background-color: white;
-  margin: 3px 0;
+  transition: 0.4s;
 }
-
-.sidebar{
-  display: none;
-}
-
-
 
 @media screen and (max-width: 450px) {
   .nav-logo {
-    width: 10%;
+    width: 50%;
+    text-align: center;
   }
 
-  .nav-menu {
-    width: 90%;
-  }
-
-  .hamburger-menu {
+  .hamburger {
+    width: 50%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding-right: 20px;
+    gap: 5px;
+    z-index: 3;
   }
 
   .nav-menu {
@@ -151,43 +151,74 @@ nav {
   }
 
   .sidebar {
-    display: flex;
-    flex-direction: column;
+    width: 30%;
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    width: 30%;
-    height: 100%;
-    background: black;
+    background-color: rgba(5, 5, 5, 0.5);
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     z-index: 2;
-    padding-top: 90px;
     transition: transform 0.3s ease-in-out;
-    transform: translateX(-100%);
+    transform: translateX(100%); /* Change this to 0 */
   }
 
-  .sidebar.show {
+  .sidebar.active {
     transform: translateX(0);
   }
 
-  .nav-menu.hidden {
+  .sidebar ul {
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;
-    background: black;
-    z-index: 2;
-    padding-top: 90px;
-    justify-content: center;
     align-items: center;
+    gap: 20px;
   }
 
-  .nav-menu.hidden h4 {
-    margin: 20px 0;
+  .sidebar ul h5:after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 90%;
+    background-color: #fb643e;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
   }
 
+  .sidebar ul h5:hover::after {
+    transform: scaleX(1);
+  }
+
+  .sidebar ul h5:hover {
+    color: orange;
+  }
 }
 
+@media screen and (max-width: 400px) {
+    .nav-logo{
+      width: 60%;
+      display: flex;
+      justify-content: center;
+    }
+     
+    .sidebar{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
+    .sidebar ul{
+      width: 55%;
+      padding-top: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+}
