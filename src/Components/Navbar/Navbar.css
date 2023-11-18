@@ -9,14 +9,14 @@ header {
   height: 100%;
 }
 nav {
+  position: fixed;
+  z-index: 5;
   width: 100%;
   height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: black;
-  position: fixed;
-  z-index: 100;
 }
 
 .nav-logo {
@@ -217,7 +217,7 @@ nav {
 
     .sidebar ul{
       width: 65%;
-      padding-top: 20px;
+      padding-top: 160px;
       display: flex;
       flex-direction: column;
       align-items: center;
