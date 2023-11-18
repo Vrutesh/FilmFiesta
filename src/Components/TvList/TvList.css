@@ -1,29 +1,31 @@
+.movie__list{
+  padding-top: 100px;
+}
 
-.tv__list h2{
-    color: #fb643e;
-    font-size: 1.75rem;
+.tv__list h2 {
+  color: #fb643e;
+  font-size: 1.75rem;
 }
 
 .tv__title {
-font-size: 1.75rem;
-margin:  2.5rem 0 2.5rem 6.5rem;
+  font-size: 1.75rem;
+  margin: 2.5rem 0 2.5rem 6.5rem;
 }
 
 .list__TvCards {
-    display: flex;
-    flex-wrap: wrap ;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-
-@media screen and (max-width: 450px){
-    .tv__title{
-        margin: 2.5rem 0 2.5rem 4.5rem;
-    }
+@media screen and (max-width: 450px) {
+  .tv__title {
+    margin: 2.5rem 0 2.5rem 4.5rem;
+  }
 }
 
-@media screen and (max-width: 400px){
-    .tv__title{
-        margin: 2.5rem 0 2.5rem 3.5rem;
-    }
+@media screen and (max-width: 400px) {
+  .tv__title {
+    margin: 2.5rem 0 2.5rem 3.5rem;
+  }
 }

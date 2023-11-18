@@ -1,4 +1,8 @@
 
+
+.movie__list{
+    padding-top: 100px;
+}
 .movie__list h2{
     color: #fb643e;
 }

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alkatra&family=Chakra+Petch:wght@700&family=Cinzel:wght@600&family=DynaPuff:wght@500&family=EB+Garamond:wght@500&family=Fira+Sans:ital,wght@0,200;0,300;1,200&family=Genos:wght@800&family=Hind+Siliguri&family=Jost:wght@200&family=Lumanosimo&family=Noto+Serif:wght@700&family=Nunito&family=Nunito+Sans:opsz,wght@6..12,600&family=Open+Sans:wght@300;400;600&family=Philosopher:wght@700&family=Playfair+Display:wght@500&family=Plus+Jakarta+Sans:wght@500&family=Poppins:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@100;300&family=Shantell+Sans:ital,wght@1,300&family=Stick+No+Bills:wght@700&family=Tektur:wght@600&family=Ubuntu:wght@700&family=Victor+Mono&display=swap");
 * {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   list-style: none;
   color: white;
@@ -8,9 +10,11 @@
 header {
   height: 100%;
 }
+
 nav {
   position: fixed;
-  z-index: 5;
+  top: 0;
+  z-index: 4;
   width: 100%;
   height: 90px;
   display: flex;
@@ -165,7 +169,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    z-index: 2;
+    z-index: 3;
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%); /* Change this to 0 */
   }
@@ -175,7 +179,7 @@ nav {
   }
 
   .sidebar ul {
-    padding-top: 120px;
+    padding-top: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
