@@ -96,10 +96,9 @@
 @media screen and (max-width: 450px){
     .posterImage{
         height: 350px;
+        margin-top: 100px;
        
     }
-
-    
 
     .posterImage_title{
         font-size: 1.5rem;
@@ -108,3 +107,10 @@
         margin-bottom: 0;
     }
 }
+
+@media screen and (max-width: 400px){
+    .posterImage{
+        margin-top: 100px;
+    }
+}
+
