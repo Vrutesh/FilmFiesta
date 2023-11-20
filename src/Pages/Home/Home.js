@@ -4,6 +4,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import Movielist from '../../Components/Movielist/Movielist';
+import TrendingMovieList from '../../Components/TrendingMovieList/TrendingMovieList';
+import TvList from '../../Components/TvList/TvList';
 
 
 
@@ -55,6 +57,8 @@ function Home(){
                 }                
             </Carousel>
             <Movielist/>
+            <TrendingMovieList/>
+            <TvList/>
         </div>
         </>
     )

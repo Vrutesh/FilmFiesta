@@ -3,7 +3,7 @@
     height: 100%;
 }
 
-.cards {
+.cards {  
     display: inline-block;
     transition: transform .2s;
     position: relative;
@@ -147,7 +147,6 @@
 @media screen and (max-width: 400px){
   
     .cards{
-   
     margin: .99rem;
     max-width: 250px;
     max-height: 350px;

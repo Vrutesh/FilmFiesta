@@ -1,31 +1,46 @@
 
-
 .movie__list{
-    padding-top: 100px;
+    padding-top: 30px;
 }
 .movie__list h2{
     color: #fb643e;
 }
 
+
 .list__title {
 font-size: 1.75rem;
-margin:  2.5rem 0 2.5rem 9.5rem;
+margin:  2.5rem 0 2.5rem 6.5rem;
 }
 
 .list__cards {
-    display: flex;
-    flex-wrap: wrap ;
-    justify-content: center;
+    padding-top: 20px;
+        display: flex;
+        overflow-y: hidden;
+        padding-left: 6.5rem;
 }
 
+.list__cards::-webkit-scrollbar{
+    display: none;
+}
+
+
+    
 @media screen and (max-width: 450px){
     .list__title{
-        margin: 2.5rem 0 2.5rem 4.5rem;
+        margin: 0 0 2.5rem 4.5rem;
+    }
+
+    .list__cards{
+        padding-left: 4.5rem;
     }
 }
 
 @media screen and (max-width: 400px){
     .list__title{
-        margin: 2.5rem 0 2.5rem 3.5rem;
+        margin: 0 0 2.5rem 3.5rem;
+    }
+
+    .list__cards{
+        padding-left: 2.5rem;
     }
 }
