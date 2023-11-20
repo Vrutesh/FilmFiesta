@@ -2,20 +2,11 @@ import React, {useEffect, useState} from "react"
 import "./Movielist.css"
 import { useParams } from "react-router-dom"
 import Card from "../Card/Card"
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-
 import 'swiper/css/free-mode';
-
-
-// import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
-// import required modules
 
 
 const Movielist = () => {

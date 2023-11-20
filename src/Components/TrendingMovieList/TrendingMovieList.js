@@ -48,7 +48,8 @@ const TrendingMovieList = () => {
               ))
                 }
             </div>
-          </div></SwiperSlide>
+          </div>
+          </SwiperSlide>
       </Swiper>
 
     </>

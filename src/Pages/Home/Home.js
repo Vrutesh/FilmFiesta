@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './Home.css'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import Movielist from '../../Components/Movielist/Movielist';
 import TrendingMovieList from '../../Components/TrendingMovieList/TrendingMovieList';
 import TvList from '../../Components/TvList/TvList';
-
 
 
 function Home(){
@@ -18,10 +17,6 @@ function Home(){
         .then(res => res.json())
         .then(data => setPopularMovies(data.results))
     }, [])
-
-
-
-  
 
     
     return(
