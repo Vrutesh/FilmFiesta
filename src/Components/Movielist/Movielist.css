@@ -6,7 +6,6 @@
     color: #fb643e;
 }
 
-
 .list__title {
 font-size: 1.75rem;
 margin:  2.5rem 0 2.5rem 6.5rem;
@@ -27,7 +26,7 @@ margin:  2.5rem 0 2.5rem 6.5rem;
     
 @media screen and (max-width: 450px){
     .list__title{
-        margin: 0 0 2.5rem 4.5rem;
+        margin: 2.5rem 0 2.5rem 4.5rem;
     }
 
     .list__cards{
@@ -37,7 +36,7 @@ margin:  2.5rem 0 2.5rem 6.5rem;
 
 @media screen and (max-width: 400px){
     .list__title{
-        margin: 0 0 2.5rem 3.5rem;
+        margin: 2.5rem 0 2.5rem 3.5rem;
     }
 
     .list__cards{
