@@ -1,45 +1,42 @@
-
-.movie__list{
-    padding-top: 30px;
+.movie__list {
+  padding-top: 100px;
 }
-.movie__list h2{
-    color: #fb643e;
+.movie__list h2 {
+  color: #fb643e;
 }
 
 .list__title {
-font-size: 1.75rem;
-margin:  2.5rem 0 2.5rem 6.5rem;
+  font-size: 1.75rem;
+  margin: 2.5rem 0 2.5rem 6.5rem;
 }
 
 .list__cards {
-    padding-top: 20px;
-        display: flex;
-        overflow-y: hidden;
-        padding-left: 6.5rem;
+  padding-top: 20px;
+  display: flex;
+  overflow-y: hidden;
+  padding-left: 6.5rem;
 }
 
-.list__cards::-webkit-scrollbar{
-    display: none;
+.list__cards::-webkit-scrollbar {
+  display: none;
 }
 
+@media screen and (max-width: 450px) {
+  .list__title {
+    margin: 2.5rem 0 2.5rem 4.5rem;
+  }
 
-    
-@media screen and (max-width: 450px){
-    .list__title{
-        margin: 2.5rem 0 2.5rem 4.5rem;
-    }
-
-    .list__cards{
-        padding-left: 4.5rem;
-    }
+  .list__cards {
+    padding-left: 4.5rem;
+  }
 }
 
-@media screen and (max-width: 400px){
-    .list__title{
-        margin: 2.5rem 0 2.5rem 3.5rem;
-    }
+@media screen and (max-width: 400px) {
+  .list__title {
+    margin: 2.5rem 0 2.5rem 3.5rem;
+  }
 
-    .list__cards{
-        padding-left: 2.5rem;
-    }
+  .list__cards {
+    padding-left: 2.5rem;
+  }
 }

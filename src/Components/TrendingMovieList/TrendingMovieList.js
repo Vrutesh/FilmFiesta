@@ -17,8 +17,7 @@ const TrendingMovieList = () => {
     }, [type])
 
     const getData = () => {
-        fetch(`
-        https://api.themoviedb.org/3/trending/movie/day?api_key=f3fbd38c0c00cefd4bd7ffeb48aa7a17&language=en-US`)
+        fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=f3fbd38c0c00cefd4bd7ffeb48aa7a17&language=en-US`)
         .then(res => res.json())
         .then(data => setTrendingMovieList(data.results))
     }
