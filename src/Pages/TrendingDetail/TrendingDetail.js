@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./TrendingDetail.css"
+import "./TrendingDetail.css";
 import { useParams } from "react-router-dom";
 
 const TrendingDetail = () => {
@@ -20,7 +20,13 @@ const TrendingDetail = () => {
     return(
         <div className="movie">
         <div className="movie__intro">
-        <img className="movie__backdrop" src={`https://image.tmdb.org/t/p/original${currentTrending?.backdrop_path || ""}`} alt="movie-backdrop-path" />
+        <img
+          className="movie__backdrop"
+          src={`https://image.tmdb.org/t/p/original${
+            currentTrending ? currentTrending.backdrop_path : ""
+          }`}
+          alt="movie-backdrop-path"
+        />
         </div>
         <div className="movie__detail">
             <div className="movie__detailLeft">

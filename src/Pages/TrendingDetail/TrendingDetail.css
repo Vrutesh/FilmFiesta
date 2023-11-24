@@ -23,6 +23,7 @@
     display: flex;
     position: relative;
     bottom: 225px;
+    text-align: justify;
 }
 
 .movie__detailLeft {
@@ -140,4 +141,107 @@
 
 .movie__heading{
     color: white;
+}
+
+@media screen and (max-width: 450px) {
+
+     
+    
+        .movie__detail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: justify;
+            width: 100%;
+            
+                
+            }
+
+
+            .movie__detailLeft{
+              height: 500px;
+                display: flex;
+                justify-content: center;
+                
+            }
+         
+        
+
+
+     
+        .synopsisText {
+            height: 30px;
+            font-size: 0.5rem;
+            margin-bottom: 0;
+            
+        }
+        
+.movie__links {
+    position: relative;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.movie__homeButton {
+    color: white;
+    border: 3px solid #fb643e;
+    background-color:black;  
+    transition: .6s; 
+}
+
+.movie__homeButton:hover{
+    color: #000000;
+    background-color: #fb643e;
+}
+
+.movie__imdbButton {
+    color: white;
+    background-color:black;
+    border: 3px solid yellow;
+    transition: .6s; 
+}
+
+      
+    
+      
+    
+}
+
+@media screen and (max-width: 400px) {
+
+  .movie__detailLeft{
+    height: 550px;
+  }
+
+  .movie__name{
+    font-size: 1.5rem;
+  }
+    .movie__detailRight{
+        display: flex;
+        justify-content: center;
+        
+    }
+ .movie__detailRightTop{  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+ }
+
+    .movie__genres{
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+    }
+
+    .movie__genres span{
+        text-align: center;
+       width: 100px;
+    }
 }
