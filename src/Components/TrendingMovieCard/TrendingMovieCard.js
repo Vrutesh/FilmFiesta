@@ -24,7 +24,7 @@ const TrendingMovieCard = ({trending}) => {
             </div>
             :
 
-            <Link to={`trending/movie/day/${trending.id}`} style={{textDecoration:"none", color:"white"}}>
+            <Link to={`/trending/movie/day/${trending.id}`} style={{textDecoration:"none", color:"white"}}>
                <div className="cards">
                <img className="cards__img" src={`https://image.tmdb.org/t/p/original${trending?trending.poster_path:""}`} alt="tv-poster" />
                 <div className="cards__overlay">
